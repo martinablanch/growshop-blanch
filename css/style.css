@@ -492,3 +492,11 @@ main {
 footer {
     grid-area: footer;
 }
+
+.transition{
+    transition: all 0.5s;
+}
+
+.transition:hover {
+        transform: scale(1.5);
+}
