@@ -500,3 +500,49 @@ footer {
 .transition:hover {
         transform: scale(1.5);
 }
+
+input#boton{
+    padding: 5px 20px;
+    background-color: black;
+    font-family: Yanone;
+    font-size: 18px;
+    color: white;
+    border-radius: 100px;
+}
+
+input#barra-buscar{
+    border-radius: 100px;
+    height: 30px;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+color: white;
+}
+
+a:hover{
+    color: #A5425F;
+}
+
+a:active{
+    color: #A5425F;
+}
+
+a#a-ayuda{
+    color: black;
+}
+
+a#a-ayuda:hover{
+    color: #A5425F;
+}
+
+.logoMenu{
+    transition: all 0.5s;
+}
+
+.logoMenu:hover{
+    transform: scale(1.5);
+}
