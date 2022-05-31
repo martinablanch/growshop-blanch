@@ -503,10 +503,10 @@ footer {
 
 input#boton{
     padding: 5px 20px;
-    background-color: black;
+    background-color: whitesmoke;
     font-family: Yanone;
     font-size: 18px;
-    color: white;
+    color: black;
     border-radius: 100px;
 }
 
