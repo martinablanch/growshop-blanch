@@ -153,7 +153,7 @@ footer {
 }
 
 /* GRID INDEX */
-
+/* 
 .grid-inicio {
     display: grid;
     height: auto;
@@ -193,7 +193,7 @@ header {
 
 footer {
     grid-area: footer;
-}
+} */
 
 /* MEDIA QUERIE DESKTOP INDEX*/
 @media screen and (min-width:768px) {
@@ -295,7 +295,7 @@ footer-grow {
 }
 
 /* MEDIA QUERIE DESKTOP GROWSHOP (Tengo dificultades para la media)*/
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
     .grid-growshop {
         display: grid;
         height: auto;
@@ -325,17 +325,7 @@ footer-grow {
         flex-wrap: wrap;
     }
 
-    /* Problemas con: */
-    /*
-    .display-a{
-        display: inline-block;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    } */
-}
-
-
+    
 /* GRID SMOKESHOP */
 .grid-smoke {
     display: grid;
@@ -493,6 +483,9 @@ footer {
     grid-area: footer;
 }
 
+
+/* TRANSICIONES Y ESTILOS */
+/* Transición a los botones */
 .transition{
     transition: transform 0.5s;
 }
@@ -501,6 +494,7 @@ footer {
         transform: scale(1.5);
 }
 
+/* Estilo a los botones */
 input#boton{
     padding: 5px 20px;
     background-color: whitesmoke;
@@ -510,11 +504,13 @@ input#boton{
     border-radius: 100px;
 }
 
+/* Estilo a la barra de búsqueda */
 input#barra-buscar{
     border-radius: 100px;
     height: 30px;
 }
 
+/* Estilo a los links */
 a:link{
     color: white;
 }
@@ -539,6 +535,7 @@ a#a-ayuda:hover{
     color: #A5425F;
 }
 
+/* Transición al logo del header */
 .logoMenu{
     transition: all 0.5s;
 }
