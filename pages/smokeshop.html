@@ -15,90 +15,427 @@
 <body>
 
     <div class="grid-smoke">
-        <header>
 
-            <li class="logoMenu"><a href="../index.html"><img src="../media/logos/gorillalogo.png" alt="INICIO"
-                        width="100px"></a></li>
+        <header class="header container-fluid">
 
-            <nav>
-                <ul class="menuHeader">
-                    <li class="menuHeader"><a href="../index.html">INICIO</a></li>
-                    <li class="menuHeader"><a href="../pages/growshop.html">GROWSHOP</a></li>
-                    <li class="menuHeader"><a href="#">SMOKESHOP</a></li>
-                    <li class="menuHeader"><a href="../pages/novedades.html">NOVEDADES</a></li>
-                    <li class="menuHeader"><a href="#Contacto">CONTACTO</a></li>
-                    <li class="menuHeader"><a href="../pages/ayuda.html">AYUDA</a></li>
-                    <div class="barraBuscar">
-                        <input type="search" name="" id="barra-buscar" placeholder="Buscar">
+            <a href="../index.html" class="logoMenu"><img src="../media/logos/gorillalogo.png" alt="INICIO"
+                    width="100px"></a>
+
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+
+            <nav class="navbar navbar-expand-lg navbar-expand-xl navbar-expand-xxl navbar-dark">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="menuHeader navbar-nav d-inline-flex p-2">
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/growshop.html">GROWSHOP</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="#">SMOKESHOP</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/novedades.html">NOVEDADES</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="#Contacto">CONTACTO</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/ayuda.html">AYUDA</a>
+                            </li>
+                        </ul>
                     </div>
-                </ul>
+                </div>
             </nav>
         </header>
+
 
         <main>
             <div class="portada">
                 <h1 class="titulo-portada">Smokeshop</h1>
             </div>
 
-            <div class="productos-nav">
-                <h2>Productos</h2>
-                <nav>
-                    <ul class="lista-productos">
-                        <li><a href="#parafernacia">Parafernacia</a></li>
-                        <li><a href="#vaporizadores">Vaporizadores</a></li>
-                    </ul>
-                </nav>
+            <div class="display-grow">
+                <div class="productos-nav nav-grow container-fluid">
+                    <nav class="navbar navbar-dark">
+                        <div class="container-fluid">
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                                data-bs-target="#menu-smoke">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="menu-smoke" class="collapse navbar-collapse">
+                                <ul class="lista-productos">
+                                    <li class="dropdown-item"><a href="#parafernacia">Parafernacia</a></li>
+                                    <li class="dropdown-item"><a href="#vaporizadores">Vaporizadores</a></li>
+                                </ul>
+                            </div>
+                    </nav>
+                </div>
             </div>
 
-            <section>
-                <div>
-                    <h3 id="parafernacia">Parafernacia</h3>
-                </div>
-                <div>
-                    <img src="../media/productos-smokeshop/pipavidriometal.jpeg" alt="Pipa vidrio metal" width="200px">
-                    <img src="../media/productos-smokeshop/pipacalavera.jpeg" alt="Pipa calavera" width="200px">
-                    <img src="../media/productos-smokeshop/picadormetal4piezas.jpeg" alt="Picador metal 4 piezas"
-                        width="200px">
-                    <img src="../media/productos-smokeshop/picadormetal3piezas.jpeg" alt="Picador metal 3 piezas"
-                        width="200px">
-                </div>
-                <div>
-                    <img src="../media/productos-smokeshop/filtrossmoking.jpeg" alt="Filtros Smoking" width="200px">
-                    <img src="../media/productos-smokeshop/smokingbrownfiltros.jpeg" alt="Filtros Smoking Brown"
-                        width="200px">
-                    <img src="../media/productos-smokeshop/encendedor1.jpeg" alt="Encendedor liso" width="200px">
-                    <img src="../media/productos-smokeshop/encendedor2.jpg" alt="Encendedor ojo" width="200px">
-                </div>
-                <div>
-                    <img src="../media/productos-smokeshop/encendedor3.jpg" alt="Encendedor dibujos" width="200px">
-                    <img src="../media/productos-smokeshop/portador.jpeg" alt="Portador" width="200px">
-                    <img src="../media/productos-smokeshop/contenedorcircular.jpeg" alt="Contenedor circular"
-                        width="200px">
-                    <img src="../media/productos-smokeshop/contenedorrectangular.jpg" alt="Contenedor rectangular"
-                        width="200px">
-                </div>
-                <div>
-                    <img src="../media/productos-smokeshop/cenicero.jpeg" alt="Cenicero" width="200px">
-                    <img src="../media/productos-smokeshop/bandeja1.jpeg" alt="Bandeja rectangular azul" width="200px">
-                    <img src="../media/productos-smokeshop/bandeja2.jpg" alt="Bandeja rectangular marrón" width="200px">
-                    <img src="../media/productos-smokeshop/bandeja3.jpg" alt="Bandeja circular" width="200px">
-                </div>
-                <div>
-                    <img src="../media/productos-smokeshop/celulosa.jpeg" alt="Papelillo celulosa" width="200px">
-                    <img src="../media/productos-smokeshop/blunt.jpg" alt="Papelillo blunt" width="200px">
-                    <img src="../media/productos-smokeshop/armadorgizer.jpeg" alt="Armador Gizer" width="200px">
-                    <img src="../media/productos-smokeshop/armadorraw.jpeg" alt="Armador Raw" width="200px">
-                </div>
+            <h2 class="text-center lead gt">PRODUCTOS</h2>
 
-                <section>
-                    <div>
-                        <h3 id="vaporizadores">Vaporizadores</h3>
-                    </div>
-                    <div>
-                        <img src="../media/productos-smokeshop/vaporizador1.png" alt="Vaporizador" width="200px">
-                        <img src="../media/productos-smokeshop/vaporizador2.png" alt="Vaporizador" width="200px">
-                    </div>
-                </section>
+            <div class="container-fluid">
+                <div class="row gx-5 gy-5">
+                    <section class="col">
+                        <article id="pipa" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Pipa de vidrio y metal</h3>
+                                <img src="../media/productos-smokeshop/pipavidriometal.jpeg" alt="Pipa vidrio metal"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="pipa" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Pipa Calavera</h3>
+                                <img src="../media/productos-smokeshop/pipacalavera.jpeg" alt="Pipa calavera"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="picador" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Picador de metal (4 piezas)</h3>
+                                <img src="../media/productos-smokeshop/picadormetal4piezas.jpeg"
+                                    alt="Picador metal 4 piezas" class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="picador" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Picador de metal (3 piezas)</h3>
+                                <img src="../media/productos-smokeshop/picadormetal3piezas.jpeg"
+                                    alt="Picador metal 3 piezas" class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="filtros" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Filtros Smoking</h3>
+                                <img src="../media/productos-smokeshop/filtrossmoking.jpeg" alt="Filtros Smoking"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="filtros" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Filtros Smoking Brown</h3>
+                                <img src="../media/productos-smokeshop/smokingbrownfiltros.jpeg"
+                                    alt="Filtros Smoking Brown" class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="encendedor" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Encendedor liso</h3>
+                                <img src="../media/productos-smokeshop/encendedor1.jpeg" alt="Encendedor liso"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="encendedor" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Encendedor estampado</h3>
+                                <img src="../media/productos-smokeshop/encendedor2.jpg" alt="Encendedor ojo"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="encendedor" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Encendedor con dibujos</h3>
+                                <img src="../media/productos-smokeshop/encendedor3.jpg" alt="Encendedor dibujos"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="portador" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Portador</h3>
+                                <img src="../media/productos-smokeshop/portador.jpeg" alt="Portador"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="contenedorcircular" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Contenedor circular</h3>
+                                <img src="../media/productos-smokeshop/contenedorcircular.jpeg"
+                                    alt="Contenedor circular" class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="contenedor-rect" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Contenedor rectangular</h3>
+                                <img src="../media/productos-smokeshop/contenedorrectangular.jpg"
+                                    alt="Contenedor rectangular" class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="cenicero" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Cenicero</h3>
+                                <img src="../media/productos-smokeshop/cenicero.jpeg" alt="Cenicero"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="bandeja" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Bandeja rectangular azul</h3>
+                                <img src="../media/productos-smokeshop/bandeja1.jpeg" alt="Bandeja rectangular azul"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="bandeja" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Bandeja rectangular marrón</h3>
+                                <img src="../media/productos-smokeshop/bandeja2.jpg" alt="Bandeja rectangular marrón"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="bandeja" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Bandeja circular</h3>
+                                <img src="../media/productos-smokeshop/bandeja3.jpg" alt="Bandeja circular"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="papelillo" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Papeles de celulosa</h3>
+                                <img src="../media/productos-smokeshop/celulosa.jpeg" alt="Papelillo celulosa"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="papelillo" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Papeles Blunt</h3>
+                                <img src="../media/productos-smokeshop/blunt.jpg" alt="Papelillo blunt"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="armador" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Armador Gizer</h3>
+                                <img src="../media/productos-smokeshop/armadorgizer.jpeg" alt="Armador Gizer"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="armador" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Armador Raw</h3>
+                                <img src="../media/productos-smokeshop/armadorraw.jpeg" alt="Armador Raw"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="vaporizador" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                        <h3 class="card-header">Vaporizador</h3>
+                                        <img src="../media/productos-smokeshop/vaporizador1.png" alt="Vaporizador"
+                                            class="mx-auto d-block" width="150px">
+                                        <div class="card-body">
+                                            <p class="lead fw-normal">$xxxx</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+                    </section>
+
+                    <section class="col">
+                        <article id="vaporizador" class="col-md-6 col-lg-4 col-xxl-4">
+                                    <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                        <h3 class="card-header">Vaporizador</h3>
+                                        <img src="../media/productos-smokeshop/vaporizador2.png" alt="Vaporizador"
+                                            class="mx-auto d-block" width="150px">
+                                        <div class="card-body">
+                                            <p class="lead fw-normal">$xxxx</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+
 
         </main>
 

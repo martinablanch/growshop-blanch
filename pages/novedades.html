@@ -13,25 +13,36 @@
 </head>
 
 <body>
-
     <div class="grid-novedades">
-        <header class="header-novedades">
+        <header class="header container-fluid">
 
-            <li class="logoMenu"><a href="../index.html"><img src="../media/logos/gorillalogo.png" alt="INICIO"
-                        width="100px"></a></li>
+            <a href="../index.html" class="logoMenu"><img src="../media/logos/gorillalogo.png" alt="INICIO"
+                    width="100px"></a>
 
-            <nav>
-                <ul class="menuHeader">
-                    <li class="menuHeader"><a href="../index.html">INICIO</a></li>
-                    <li class="menuHeader"><a href="../pages/growshop.html">GROWSHOP</a></li>
-                    <li class="menuHeader"><a href="../pages/smokeshop.html">SMOKESHOP</a></li>
-                    <li class="menuHeader"><a href="#">NOVEDADES</a></li>
-                    <li class="menuHeader"><a href="#Contacto">CONTACTO</a></li>
-                    <li class="menuHeader"><a href="../pages/ayuda.html">AYUDA</a></li>
-                    <div class="barraBuscar">
-                        <input type="search" name="" id="barra-buscar" placeholder="Buscar">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+
+            <nav class="navbar navbar-expand-lg navbar-expand-xl navbar-expand-xxl navbar-dark">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="menuHeader navbar-nav d-inline-flex p-2">
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/growshop.html">GROWSHOP</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="../pages/smokeshop.html">SMOKESHOP</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="#">NOVEDADES</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="#Contacto">CONTACTO</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/ayuda.html">AYUDA</a>
+                            </li>
+                        </ul>
                     </div>
-                </ul>
+                </div>
             </nav>
         </header>
 
@@ -44,7 +55,7 @@
                 <section class="prod-nuevos">
                     <div class="prod-nuevos-block">
                         <h2 class="black">Productos nuevos</h2>
-                        <div class="transition"><input type="submit" value="SHOP NOW" id="boton"></div>
+                        <div class="transition"><a class="btn btn-dark" href="#" role="button">Ver más</a></div>
                     </div>
                     <img src="../media/portadas-varios/prodnuevos.jpg" alt="Productos nuevos" width="200px">
                 </section>
@@ -52,7 +63,7 @@
                 <section class="ofertas">
                     <div class="prod-nuevos-block">
                         <h2 class="black">Ofertas</h2>
-                        <div class="transition"><input type="submit" value="SHOP NOW" id="boton"></div>
+                        <div class="transition"><a class="btn btn-dark" href="#" role="button">Ver más</a></div>
                     </div>
                     <div class="oferta-hijo"><img src="../media/portadas-varios/ofertas.jpg" alt="Ofertas"></div>
                 </section>
@@ -84,7 +95,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
 </body>
 
 </html>

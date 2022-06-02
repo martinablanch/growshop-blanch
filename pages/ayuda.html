@@ -15,22 +15,35 @@
 <body>
 
     <div class="grid-ayuda">
-        <header>
-            <nav>
-                <li class="logoMenu"><a href="../index.html"><img src="../media/logos/gorillalogo.png" alt="INICIO"
-                            width="100px"></a></li>
+        <header class="header container-fluid">
 
-                <ul class="menuHeader">
-                    <li class="menuHeader"><a href="../index.html">INICIO</a></li>
-                    <li class="menuHeader"><a href="../pages/growshop.html">GROWSHOP</a></li>
-                    <li class="menuHeader"><a href="../pages/smokeshop.html">SMOKESHOP</a></li>
-                    <li class="menuHeader"><a href="../pages/novedades.html">NOVEDADES</a></li>
-                    <li class="menuHeader"><a href="#Contacto">CONTACTO</a></li>
-                    <li class="menuHeader"><a href="#">AYUDA</a></li>
-                    <div class="barraBuscar">
-                        <input type="search" name="" id="barra-buscar" placeholder="Buscar">
+            <a href="../index.html" class="logoMenu"><img src="../media/logos/gorillalogo.png" alt="INICIO"
+                    width="100px"></a>
+
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+
+            <nav class="navbar navbar-expand-lg navbar-expand-xl navbar-expand-xxl navbar-dark">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="menuHeader navbar-nav d-inline-flex p-2">
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/growshop.html">GROWSHOP</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="../pages/smokeshop.html">SMOKESHOP</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/novedades.html">NOVEDADES</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="#Contacto">CONTACTO</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="#">AYUDA</a>
+                            </li>
+                        </ul>
                     </div>
-                </ul>
+                </div>
             </nav>
         </header>
 
@@ -38,24 +51,24 @@
             <div class="portada">
                 <h1 class="titulo-portada">Ayuda</h1>
             </div>
-            <div>
-                <h2>Preguntas frecuentes</h2>
-                <h3>Pregunta 1</h3>
+            <div class="container my-5">
+                <h2 class="text-center lead gt fw-bold">PREGUNTAS FRECUENTES</h2>
+                <h3 class="fw-bold">Pregunta 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus facilis ex aspernatur officia
                     error quo nulla dignissimos minima, soluta iste enim eligendi laudantium magni! Minima laboriosam
                     ducimus dolore cupiditate rem? Minus quidem obcaecati rem, sit non, laborum assumenda, harum beatae
                     qui tempore ipsa officiis esse sunt maxime blanditiis amet?</p>
-                <h3>Pregunta 2</h3>
+                <h3 class="fw-bold">Pregunta 2</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tempora repellendus temporibus
                     molestias, repudiandae rem incidunt voluptates labore sit consequatur quaerat odio reprehenderit
                     ipsam.</p>
-                <h3>Pregunta 3</h3>
+                <h3 class="fw-bold">Pregunta 3</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, perferendis. Officiis est pariatur
                     distinctio cupiditate sed reiciendis, consequatur praesentium enim id officia cum recusandae sunt.
                 </p>
             </div>
 
-            <div class="contactoAyuda">
+            <div class="contactoAyuda my-5">
                 <a href="#Contacto" id="a-ayuda">Si tenés más dudas, comunicate con nosotros</a>
             </div>
 
