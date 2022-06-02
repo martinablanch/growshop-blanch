@@ -16,16 +16,19 @@
 
     <div class="grid-inicio">
         <header class="header container-fluid">
-            <a href="#" class="logoMenu navbar-brand"><img src="./media/logos/gorillalogo.png" alt="INICIO"
-                    width="100px"></a>
 
-            <nav class="navbar navbar-expand-md navbar-dark">
+            <a href="#" class="logoMenu"><img src="./media/logos/gorillalogo.png" alt="INICIO" width="100px"></a>
+
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+
+            <nav class="navbar navbar-expand-lg navbar-expand-xl navbar-expand-xxl navbar-dark">
                 <div class="container-fluid">
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div id="menu" class="collapse navbar-collapse">
-                        <ul class="menuHeader navbar-nav ms-3">
+                        <ul class="menuHeader navbar-nav d-inline-flex p-2">
                             <li class="menuHeader dropdown-item"><a class="nav-link" href="#">INICIO</a></li>
                             <li class="menuHeader dropdown-item"><a class="nav-link"
                                     href="./pages/growshop.html">GROWSHOP</a></li>
@@ -39,11 +42,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="barraBuscar">
-                    <input type="search" name="" id="barra-buscar" placeholder="Buscar">
-                </div>
-
             </nav>
         </header>
 
@@ -67,19 +65,21 @@
 
             </div>
 
-            <div class="sectionProductos">
-                <div class="growshop productos">
-                    <img src="./media/portadas-varios/grow.jpg" alt="GROWSHOP" width="300px">
-                    <div class="position">
-                        <p>GROWSHOP</p>
-                        <div class="transition"><input type="submit" value="SHOP NOW" id="boton"></div>
+            <div class="sectionProductos row-1 container-fluid w-100">
+                <div class="row">
+                    <div class="growshop productos col-md-6">
+                        <img src="./media/portadas-varios/portada-grow.jpg" class="w-100 h-100" alt="GROWSHOP">
+                        <div class="position">
+                            <p>GROWSHOP</p>
+                            <div class="transition"><input type="submit" value="SHOP NOW" id="boton"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="smokeshop productos">
-                    <img src="./media/portadas-varios/smokeshop.jpg" alt="SMOKESHOP" width="300px">
-                    <div class="position">
-                        <p>SMOKESHOP</p>
-                        <div class="transition"><input type="submit" value="SHOP NOW" id="boton"></div>
+                    <div class="smokeshop productos col-md-6">
+                        <img src="./media/portadas-varios/portada-smoke.jpg" class="w-100 h-100" alt="SMOKESHOP">
+                        <div class="position">
+                            <p>SMOKESHOP</p>
+                            <div class="transition"><input type="submit" value="SHOP NOW" id="boton"></div>
+                        </div>
                     </div>
                 </div>
             </div>

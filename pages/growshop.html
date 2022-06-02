@@ -15,23 +15,33 @@
 <body>
     <div class="grid-growshop">
 
-        <header class="header">
+        <header class="header container-fluid">
 
-            <li class="logoMenu"><a href="../index.html"><img src="../media/logos/gorillalogo.png" alt="INICIO"
-                        width="100px"></a></li>
+            <a href="../index.html" class="logoMenu"><img src="../media/logos/gorillalogo.png" alt="INICIO" width="100px"></a>
 
-            <nav>
-                <ul class="menuHeader">
-                    <li class="menuHeader"><a href="../index.html">INICIO</a></li>
-                    <li class="menuHeader"><a href="#">GROWSHOP</a></li>
-                    <li class="menuHeader"><a href="../pages/smokeshop.html">SMOKESHOP</a></li>
-                    <li class="menuHeader"><a href="../pages/novedades.html">NOVEDADES</a></li>
-                    <li class="menuHeader"><a href="#Contacto">CONTACTO</a></li>
-                    <li class="menuHeader"><a href="../pages/ayuda.html">AYUDA</a></li>
-                    <div class="barraBuscar">
-                        <input type="search" name="" id="barra-buscar" placeholder="Buscar">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+
+            <nav class="navbar navbar-expand-lg navbar-expand-xl navbar-expand-xxl navbar-dark">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="menuHeader navbar-nav d-inline-flex p-2">
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="#">GROWSHOP</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/smokeshop.html">SMOKESHOP</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link"
+                                    href="../pages/novedades.html">NOVEDADES</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="#Contacto">CONTACTO</a></li>
+                            <li class="menuHeader dropdown-item"><a class="nav-link" href="../pages/ayuda.html">AYUDA</a>
+                            </li>
+                        </ul>
                     </div>
-                </ul>
+                </div>
             </nav>
         </header>
 
@@ -62,179 +72,183 @@
                 </div>
             </div>
 
-            <h2 class="text-center">Productos de growshop</h2>
+            <h2 class="text-center gt">Productos de growshop</h2>
 
             <!-- <div class="sustratos"><h2 id="sustratos">Sustratos y complementos</h2></div> -->
 
-            <section class="row">
-                <article id="polea" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Polea</h3>
-                        <img src="../media/productos-growshop/polea.jpeg" alt="Polea" class="mx-auto d-block"
-                            width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
+            <div class="container-fluid">
+                <div class="row gx-5 gy-5">
+                    <section class="col">
+                        <article id="polea" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Polea</h3>
+                                <img src="../media/productos-growshop/polea.jpeg" alt="Polea" class="mx-auto d-block"
+                                    width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <section class="col">
+                        <article id="red-scrog" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Red Scrog</h3>
+                                <img src="../media/productos-growshop/red-scrog.jpeg" alt="Red Scrog"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <!-- <div class="fertilizacion"><h3 id="fertilizacion">Fertilización</h3></div> -->
+    
+                    <section class="col">
+                        <article id="fertilizante1" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Fertilizante 1</h3>
+                                <img src="../media/productos-growshop/fertilizante1.jpg" alt="fertilizante"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <section class="col">
+                        <article id="fertilizante2" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem ;">
+                                <h3 class="card-header">Fertilizante 2</h3>
+                                <img src="../media/productos-growshop/fertilizante2.jpg" alt="fertilizante"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <!--     <div class="medicion"><h3 id="medicion">Medición</h3></div> -->
+    
+                    <section class="col">
+                        <article id="medidor-ph" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Medidor de PH</h3>
+                                <img src="../media/productos-growshop/medicionph.jpeg" alt="fertilizante"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <section class="col">
+                        <article id="medidor" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Medidor de Temperatura y humedad</h3>
+                                <img src="../media/productos-growshop/mediciontemp.jpeg" alt="fertilizante"
+                                    class="mx-auto d-block" width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <!--  <div class="macetas"><h3 id="macetas">Macetas</h3></div> -->
+    
+                    <section class="col">
+                        <article id="maceta1" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Maceta 1</h3>
+                                <img src="../media/productos-growshop/maceta1.jpg" alt="maceta1" class="mx-auto d-block"
+                                    width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <section class="col">
+                        <article id="maceta2" class="col-md-6 col-lg-4 col-xxl-4">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Maceta 2</h3>
+                                <img src="../media/productos-growshop/maceta2.jpeg" alt="maceta2" class="mx-auto d-block"
+                                    width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <!--<div class="plagas"><h3 id="plagas">Control de plagas</h3></div> -->
+    
+                    <section class="col">
+                        <article id="control1" class="col-md-6 col-lg-6 col-xxl-6">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Control de plagas 1</h3>
+                                <img src="../media/productos-growshop/plaga1.jpg" alt="control" class="mx-auto d-block"
+                                    width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <section class="col">
+                        <article id="control2" class="col-md-6 col-lg-6 col-xxl-6">
+                            <div class="card text-center bg-light h-100" style="width: 18rem;">
+                                <h3 class="card-header">Control de plagas 2</h3>
+                                <img src="../media/productos-growshop/plaga2.jpg" alt="control" class="mx-auto d-block"
+                                    width="150px">
+                                <div class="card-body">
+                                    <p class="lead fw-normal">$xxxx</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-dark">Comprar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
 
-            <section class="row">
-                <article id="red-scrog" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Red Scrog</h3>
-                        <img src="../media/productos-growshop/red-scrog.jpeg" alt="Red Scrog" class="mx-auto d-block"
-                            width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
 
-            <!-- <div class="fertilizacion"><h3 id="fertilizacion">Fertilización</h3></div> -->
-
-            <section class="row">
-                <article id="fertilizante1" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Fertilizante 1</h3>
-                        <img src="../media/productos-growshop/fertilizante1.jpg" alt="fertilizante"
-                            class="mx-auto d-block" width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section class="row">
-                <article id="fertilizante2" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Fertilizante 2</h3>
-                        <img src="../media/productos-growshop/fertilizante2.jpg" alt="fertilizante"
-                            class="mx-auto d-block" width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-
-            <!--     <div class="medicion"><h3 id="medicion">Medición</h3></div> -->
-
-            <section class="row">
-                <article id="medidor-ph" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Medidor de PH</h3>
-                        <img src="../media/productos-growshop/medicionph.jpeg" alt="fertilizante"
-                            class="mx-auto d-block" width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section class="row">
-                <article id="medidor" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Medidor de Temperatura y humedad</h3>
-                        <img src="../media/productos-growshop/mediciontemp.jpeg" alt="fertilizante"
-                            class="mx-auto d-block" width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-
-            <!--  <div class="macetas"><h3 id="macetas">Macetas</h3></div> -->
-
-            <section class="row">
-                <article id="maceta1" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Maceta 1</h3>
-                        <img src="../media/productos-growshop/maceta1.jpg" alt="maceta1" class="mx-auto d-block"
-                            width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section class="row">
-                <article id="maceta2" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Maceta 2</h3>
-                        <img src="../media/productos-growshop/maceta2.jpeg" alt="maceta2" class="mx-auto d-block"
-                            width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <!--                 <div class="plagas"><h3 id="plagas">Control de plagas</h3></div> -->
-
-            <section class="row">
-                <article id="control1" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Control de plagas 1</h3>
-                        <img src="../media/productos-growshop/plaga1.jpg" alt="control" class="mx-auto d-block"
-                            width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section class="row">
-                <article id="control2" class="col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card text-center bg-light h-100">
-                        <h3 class="card-header">Control de plagas 2</h3>
-                        <img src="../media/productos-growshop/plaga2.jpg" alt="control" class="mx-auto d-block"
-                            width="150px">
-                        <div class="card-body">
-                            <p class="lead fw-normal">$xxxx</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-dark">Comprar</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
         </main>
 
         <footer id="Contacto" class="footer">
