@@ -1,0 +1,46 @@
+@import 'variables';
+
+/* SCSS HEADER */
+header{
+        background-color: $bg-color;
+        color: $text-color;
+        /* Aplico Flexbox para poder alinear el logo y el menú */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+        width: 100%;
+        height: 23vh;
+
+        .logoMenu {
+            width: 120px;
+            height: 120px;
+            transition: all 0.5s;
+            
+            &:hover{
+                transform: scale(1.5);
+            }
+        } 
+
+        .menuHeader {
+            font-family: $text;
+            font-size: 16px;
+        }
+        
+    /* MEDIA QUERIES MENÚ */
+    @media screen and (min-width: 768px) {
+        .menuHeader {
+            display: inline;
+    
+            a{
+                text-decoration: none;
+    
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+} 
+            
+

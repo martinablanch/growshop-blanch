@@ -1,0 +1,26 @@
+@import 'variables';
+
+footer {
+    background-color: $bg-color;
+    font-family: $text;
+    color: $text-color;
+    font-size: $text-size;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
+
+    .horarios {
+        text-align: center;
+        font-family: Yanone;
+        font-size: 16px;
+    }
+    
+    .wsp {
+        position: fixed;
+        right: 50px;
+        bottom: 10%;
+    }
+}
+
