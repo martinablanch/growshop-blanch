@@ -1,0 +1,600 @@
+/*FONTS*/
+
+@font-face {
+    font-family: "Yanone";
+    src: url('../fonts/yanone.ttf');
+}
+
+@font-face {
+    font-family: "jersey";
+    src: url('../fonts/Jersey\ M54.ttf');
+}
+
+@font-face {
+    font-family: "roboto-regular";
+    src: url("../fonts/roboto-regular.ttf");
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url(../fonts/roboto-bold.ttf);
+}
+
+h1 {
+    font-family: jersey;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Yanone;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: Yanone;
+    font-size: 25px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*CSS ENCABEZADO*/
+
+.logoMenu {
+    width: 120px;
+    height: 120px;
+}
+
+/* Aplico Flexbox para poder alinear el logo y el menú */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;
+    height: 23vh;  
+}
+
+.portada {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    border-top: 1px solid whitesmoke;
+    width: auto;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Luego el menú será desplegable (sin incluir la barra de búsqueda)*/
+.menuHeader {
+    font-family: Yanone;
+    font-size: 16px;
+    color: black;
+}
+
+/* MEDIA QUERIES MENÚ */
+@media screen and (min-width: 768px) {
+    .menuHeader {
+        display: inline;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.barraBuscar {
+    display: inline;
+}
+
+/* CSS FOOTER */
+footer {
+    background-color: black;
+    font-family: Yanone;
+    color: white;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.horarios {
+    text-align: center;
+    font-family: Yanone;
+    font-size: 16px;
+}
+
+.wsp {
+    position: fixed;
+    right: 50px;
+    bottom: 10%;
+}
+
+
+/* CSS INDEX */
+.quieneSomos {
+    font-family: roboto-regular;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #1A1B1D;
+}
+
+.bg-quienes{
+    background-color: #1A1B1D;
+}
+
+.sectionProductos {
+    background-color: #1A1B1D;
+    font-family: Yanone;
+    font-size: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto
+    
+}
+
+.productos {
+    text-align: center;
+    position: relative;
+    margin: 0 -15px;
+    padding-right: 0; 
+    background-position: center center;
+    background-size: cover;
+}
+
+.position {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+@media screen and (min-width:768px) {
+    .position {
+        top:45%
+    }
+}
+
+.btn-light {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.half-block {
+    text-align: center;
+    margin: 0 -15px;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* GRID INDEX */
+/* 
+.grid-inicio {
+    display: grid;
+    height: auto;
+    width: auto;
+    gap: 1px;
+    grid-template-columns: auto;
+    grid-template-rows: auto 50% 30% auto auto auto;
+    grid-template-areas: "header"
+        "portada"
+        "texto"
+        "productos"
+        "productos"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+.logoPrincipal {
+    grid-area: portada;
+    padding-bottom: 30px;
+}
+
+.texto {
+    grid-area: texto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sectionProductos {
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+} */
+
+/* MEDIA QUERIE DESKTOP INDEX*/
+@media screen and (min-width:768px) {
+
+    .grid-inicio {
+        display: grid;
+        height: auto;
+        width: auto;
+       
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "header header"
+            "main main"
+            "main main"
+            "main main"
+            "footer footer";
+    }
+
+    .menuHeader {
+        display: inline;
+        padding: 10px;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .portada {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+
+    .quieneSomos {
+        padding-bottom: 50px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .sectionProductos {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+/* CSS DE NAV EN PÁGINA GROWSHOP Y EN PÁGINA SMOKESHOP */
+.productos-nav {
+    list-style: none;
+    line-height: 30px;
+    font-family: roboto-regular;
+    font-size: 12px;
+    color: white;
+    background-color: black;
+}
+
+/* CSS PARA LOS TÍTULOS DE TODAS LAS PÁGINAS */
+.titulo-portada {
+    font-size: 50px;
+}
+
+
+/* CSS PARA AYUDA */
+.contactoAyuda {
+    text-align: center;
+    font-family: roboto-bold;
+    font-size: 20px;
+}
+
+/* GRID GROWSHOP */
+.grid-growshop { 
+    display: grid;
+    height: auto;
+    width: auto;
+    gap: 1px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header"
+        "main"
+        "main"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main-grow {
+    grid-area: main;
+    padding-bottom: 30px;
+}
+
+footer-grow {
+    grid-area: footer;
+} 
+
+/* MEDIA QUERIE DESKTOP SMOKESHOP (Tengo dificultades para la media)*/
+/* @media screen and (min-width:768px) {
+    .grid-growshop {
+        display: grid;
+        height: auto;
+        width: 100vw;
+        grid-template-columns: 200px auto;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "header header"
+            "portada portada"
+            "main main"
+            "footer footer";
+    }
+
+    .portada {
+        grid-area: portada;
+    }
+
+    .nav-grow {
+        grid-area: nav;
+        display: block;
+        width: 200px;
+        height: 100vh;
+    }
+
+    .display-grow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+} */
+
+    
+/* GRID SMOKESHOP */
+.grid-smoke {
+    display: grid;
+    height: auto;
+    width: auto;
+    gap: 1px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header"
+        "main"
+        "main"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* GRID NOVEDADES */
+.grid-novedades {
+    display: grid;
+    height: auto;
+    width: auto;
+    gap: 1px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header"
+        "portada-nov"
+        "prod-nuevos"
+        "ofertas"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+.portada {
+    grid-area: portada-nov;
+}
+
+.prod-nuevos {
+    grid-area: prod-nuevos;
+}
+
+.ofertas {
+    grid-area: ofertas;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.flex-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.black {
+    color: black;
+    font-size: 30px;
+}
+
+/* MEDIA QUERIE DESKTOP NOVEDADES */
+@media screen and (min-width:1024px) {
+    .grid-novedades {
+        display: grid;
+        height: auto;
+        width: auto;
+        gap: 5px;
+        grid-template-columns: auto auto;
+        grid-template-rows: (5, auto);
+        grid-template-areas: "header header"
+            "main main"
+            "main main"
+            "ofertas ofertas"
+            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+        font-size: 20px;
+    }
+
+    .portada {
+        grid-area: portada-nov;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    /* FLEXBOX */
+    .prod-nuevos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .prod-nuevos-block {
+        display: block;
+    }
+
+    .ofertas {
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .oferta-hijo {
+        order: -1;
+    }
+}
+
+/* GRID AYUDA */
+.grid-ayuda {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* TRANSICIONES Y ESTILOS */
+/* Transición a los botones */
+.transition{
+    transition: transform 0.5s;
+}
+
+.transition:hover {
+        transform: scale(1.5);
+}
+
+/* Estilo a los botones */
+input#boton{
+    padding: 5px 20px;
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #ffffff;
+    font-family: Yanone;
+    font-size: 18px;
+}
+
+/* Estilo a la barra de búsqueda */
+input#barra-buscar{
+    border-radius: 100px;
+    height: 30px;
+}
+
+/* Estilo a los links */
+a:link{
+    color: white;
+}
+
+a:visited{
+color: white;
+}
+
+a:hover{
+    color: #A5425F;
+}
+
+a:active{
+    color: #A5425F;
+}
+
+a#a-ayuda{
+    color: white;
+}
+
+a#a-ayuda:hover{
+    color: #A5425F;
+}
+
+/* Transición al logo del header */
+.logoMenu{
+    transition: all 0.5s;
+}
+
+.logoMenu:hover{
+    transform: scale(1.5);
+}
+
+.gt{
+    font-size: xx-large;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.hover-img:hover{
+    background-color: #1A1B1D;
+    opacity: 0.3;
+}
+
+.main-ayuda{
+    background-color: #1A1B1D;
+    color: #ffffff;
+}
+
+.preg{
+    letter-spacing: 3px;
+}
+
