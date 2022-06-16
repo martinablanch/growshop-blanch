@@ -3,26 +3,26 @@
 @import 'footer';
 
 /* SCSS FONTS */
-h1{
+h1 {
     font-family: $title;
     font-size: $title-size;
     color: $text-color;
 }
 
-h2{
+h2 {
     font-family: $text;
     font-size: $text-size;
     color: $text-color;
 }
 
-h3{
+h3 {
     font-family: $text;
     font-size: $text-size;
     color: $text-color;
 }
 
-main{
-       .portada {
+main {
+    .portada {
         background-color: $bg-color;
         color: $text-color;
         text-align: center;
@@ -31,7 +31,10 @@ main{
         height: auto;
         padding-top: 100px;
         padding-bottom: 100px;
-        }
+    }
+
+    .bg-quienes {
+        background-color: $second-bg-color;
 
         .quieneSomos {
             font-family: roboto-regular;
@@ -40,74 +43,66 @@ main{
             text-align: center;
             padding-bottom: 20px;
         }
-        
-        .bg-quienes{
-            background-color: $second-bg-color;
-        }
-                
-        .sectionProductos {
-            background-color: $second-bg-color;
-            font-family: $text;
-            font-size: 30px;
-            padding-left: 0;
-            padding-right: 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin:0 auto
-        }
+    }
 
-        .productos {
-            text-align: center;
-            position: relative;
-            margin: 0 -15px;
-            padding-right: 0; 
-            background-position: center center;
-            background-size: cover;
-        }
+    .sectionProductos {
+        background-color: $second-bg-color;
+        font-family: $text;
+        font-size: 30px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto
+    }
 
-        #boton {
-            padding: 5px 20px;
-            font-family: $text;
-            font-size: 18px;
-            color: $text-color;
-            background-color: transparent;
-            border-color: #ffffff;   
-        }
+    .productos {
+        text-align: center;
+        position: relative;
+        margin: 0 -15px;
+        padding-right: 0;
+        background-position: center center;
+        background-size: cover;
+    }
 
+    #boton {
+        padding: 5px 20px;
+        font-family: $text;
+        font-size: 18px;
+        color: $text-color;
+        background-color: transparent;
+        border-color: #ffffff;
+    }
+
+    .position {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        color: $text-color;
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .hover-img:hover {
+        background-color: #1A1B1D;
+        opacity: 0.3;
+    }
+
+    @media screen and (min-width:768px) {
         .position {
-            width: 100%;
-            position: absolute;
-            top: 30%;
-            text-align: center;
-            color: $text-color;
-            font-size: 30px;
-            letter-spacing: 3px;
+            top: 40%
         }
+    }
 
-        .hover-img:hover{
-            background-color: #1A1B1D;
-            opacity: 0.3;
+    /* Transición a los botones */
+    .transition {
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.5);
         }
-
-        @media screen and (min-width:768px) {
-            .position {
-                top:40%
-            }
-        }
-
-        /* Transición a los botones */
-        .transition{
-            transition: transform 0.5s;
-
-            &:hover{
-                transform: scale(1.5);
-            }
-        }
-
-        
-
+    }
 }
-       
-    
