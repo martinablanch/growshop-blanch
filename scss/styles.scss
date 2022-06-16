@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'mixins';
 
 /* SCSS FONTS */
 h1 {
@@ -97,12 +98,54 @@ main {
         }
     }
 
-    /* Transición a los botones */
     .transition {
         transition: transform 0.5s;
 
         &:hover {
             transform: scale(1.5);
         }
+    }
+}
+
+
+/* En AYUDA */
+
+@function color($color-help) {
+    @return map-get($colores, $color-help);
+}
+
+
+.help-sass {
+    background-color: color(primary-light);
+
+    
+    @include desktop {
+        background-color: color(secondary);
+    }
+}
+
+
+.rta {
+    color: color(text-primary);
+}
+
+.preg {
+    @extend .rta;
+    letter-spacing: 3px;
+}
+
+
+.contactoAyuda {
+    text-align: center;
+    font-family: roboto-regular;
+    font-size: 20px;
+
+    a#a-ayuda {
+        text-decoration: none;
+        color: white;
+    }
+
+    a#a-ayuda:hover {
+        color: #A5425F;
     }
 }

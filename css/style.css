@@ -1,37 +1,38 @@
 @charset "UTF-8";
-
+/* COLORS */
 /* FONTS */
 @font-face {
   font-family: "Yanone";
-  src: url("../fonts/yanone.ttf");
-}
+  src: url("../fonts/yanone.ttf"); }
 
 @font-face {
   font-family: "jersey";
-  src: url("../fonts/Jersey M54.ttf");
-}
+  src: url("../fonts/Jersey M54.ttf"); }
 
 @font-face {
   font-family: "roboto-regular";
-  src: url("../fonts/roboto-regular.ttf");
-}
+  src: url("../fonts/roboto-regular.ttf"); }
 
+/* EN 'AYUDA' */
+/* MAPA DE COLORES */
+/* breakpoint */
+/* COLORS */
 /* FONTS */
 @font-face {
   font-family: "Yanone";
-  src: url("../fonts/yanone.ttf");
-}
+  src: url("../fonts/yanone.ttf"); }
 
 @font-face {
   font-family: "jersey";
-  src: url("../fonts/Jersey M54.ttf");
-}
+  src: url("../fonts/Jersey M54.ttf"); }
 
 @font-face {
   font-family: "roboto-regular";
-  src: url("../fonts/roboto-regular.ttf");
-}
+  src: url("../fonts/roboto-regular.ttf"); }
 
+/* EN 'AYUDA' */
+/* MAPA DE COLORES */
+/* breakpoint */
 /* SCSS HEADER */
 header {
   background-color: black;
@@ -43,54 +44,41 @@ header {
   align-items: center;
   width: 100%;
   height: 23vh;
-  /* MEDIA QUERIES MENÚ */
-}
-
-header .logoMenu {
-  width: 120px;
-  height: 120px;
-  transition: all 0.5s;
-}
-
-header .logoMenu:hover {
-  transform: scale(1.5);
-}
-
-header .menuHeader {
-  font-family: Yanone;
-  font-size: 16px;
-}
-
-@media screen and (min-width: 768px) {
+  /* MEDIA QUERIES MENÚ */ }
+  header .logoMenu {
+    width: 120px;
+    height: 120px;
+    transition: all 0.5s; }
+    header .logoMenu:hover {
+      transform: scale(1.5); }
   header .menuHeader {
-    display: inline;
-  }
+    font-family: Yanone;
+    font-size: 16px; }
+  @media screen and (min-width: 768px) {
+    header .menuHeader {
+      display: inline; }
+      header .menuHeader a {
+        text-decoration: none; }
+        header .menuHeader a li {
+          list-style: none; } }
 
-  header .menuHeader a {
-    text-decoration: none;
-  }
-
-  header .menuHeader a li {
-    list-style: none;
-  }
-}
-
+/* COLORS */
 /* FONTS */
 @font-face {
   font-family: "Yanone";
-  src: url("../fonts/yanone.ttf");
-}
+  src: url("../fonts/yanone.ttf"); }
 
 @font-face {
   font-family: "jersey";
-  src: url("../fonts/Jersey M54.ttf");
-}
+  src: url("../fonts/Jersey M54.ttf"); }
 
 @font-face {
   font-family: "roboto-regular";
-  src: url("../fonts/roboto-regular.ttf");
-}
+  src: url("../fonts/roboto-regular.ttf"); }
 
+/* EN 'AYUDA' */
+/* MAPA DE COLORES */
+/* breakpoint */
 footer {
   background-color: black;
   font-family: Yanone;
@@ -100,43 +88,48 @@ footer {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
-  padding-right: 0;
-}
+  padding-right: 0; }
+  footer .horarios {
+    text-align: center;
+    font-family: Yanone;
+    font-size: 16px; }
+  footer .wsp {
+    position: fixed;
+    right: 50px;
+    bottom: 10%; }
 
-footer .horarios {
-  text-align: center;
-  font-family: Yanone;
-  font-size: 16px;
-}
+/* COLORS */
+/* FONTS */
+@font-face {
+  font-family: "Yanone";
+  src: url("../fonts/yanone.ttf"); }
 
-footer .wsp {
-  position: fixed;
-  right: 50px;
-  bottom: 10%;
-}
+@font-face {
+  font-family: "jersey";
+  src: url("../fonts/Jersey M54.ttf"); }
 
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/roboto-regular.ttf"); }
+
+/* EN 'AYUDA' */
+/* MAPA DE COLORES */
+/* breakpoint */
 /* SCSS FONTS */
 h1 {
   font-family: jersey;
   font-size: 50px;
-  color: white;
-}
+  color: white; }
 
 h2 {
   font-family: Yanone;
   font-size: 25px;
-  color: white;
-}
+  color: white; }
 
 h3 {
   font-family: Yanone;
   font-size: 25px;
-  color: white;
-}
-
-main {
-  /* Transición a los botones */
-}
+  color: white; }
 
 main .portada {
   background-color: black;
@@ -146,20 +139,16 @@ main .portada {
   width: auto;
   height: auto;
   padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-main .quieneSomos {
-  font-family: roboto-regular;
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  padding-bottom: 20px;
-}
+  padding-bottom: 100px; }
 
 main .bg-quienes {
-  background-color: #1A1B1D;
-}
+  background-color: #1A1B1D; }
+  main .bg-quienes .quieneSomos {
+    font-family: roboto-regular;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px; }
 
 main .sectionProductos {
   background-color: #1A1B1D;
@@ -171,8 +160,7 @@ main .sectionProductos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 main .productos {
   text-align: center;
@@ -180,8 +168,7 @@ main .productos {
   margin: 0 -15px;
   padding-right: 0;
   background-position: center center;
-  background-size: cover;
-}
+  background-size: cover; }
 
 main #boton {
   padding: 5px 20px;
@@ -189,8 +176,7 @@ main #boton {
   font-size: 18px;
   color: white;
   background-color: transparent;
-  border-color: #ffffff;
-}
+  border-color: #ffffff; }
 
 main .position {
   width: 100%;
@@ -199,24 +185,40 @@ main .position {
   text-align: center;
   color: white;
   font-size: 30px;
-  letter-spacing: 3px;
-}
+  letter-spacing: 3px; }
 
 main .hover-img:hover {
   background-color: #1A1B1D;
-  opacity: 0.3;
-}
+  opacity: 0.3; }
 
 @media screen and (min-width: 768px) {
   main .position {
-    top: 40%;
-  }
-}
+    top: 40%; } }
 
 main .transition {
-  transition: transform 0.5s;
-}
+  transition: transform 0.5s; }
+  main .transition:hover {
+    transform: scale(1.5); }
 
-main .transition:hover {
-  transform: scale(1.5);
-}
+/* En AYUDA */
+.help-sass {
+  background-color: #333333; }
+  @media (min-width: 1020px) {
+    .help-sass {
+      background-color: #666666; } }
+
+.rta, .preg {
+  color: white; }
+
+.preg {
+  letter-spacing: 3px; }
+
+.contactoAyuda {
+  text-align: center;
+  font-family: roboto-regular;
+  font-size: 20px; }
+  .contactoAyuda a#a-ayuda {
+    text-decoration: none;
+    color: white; }
+  .contactoAyuda a#a-ayuda:hover {
+    color: #A5425F; }
