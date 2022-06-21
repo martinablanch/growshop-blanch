@@ -592,3 +592,31 @@ a#a-ayuda:hover{
     letter-spacing: 3px;
 }
 
+
+
+/* SASS II EN AYUDA */
+/* @function color($color-help) {
+    @return map-get($colores, $color-help);
+}
+
+
+.help-sass {
+    background-color: color(primary-light);
+
+
+    @include desktop {
+        background-color: color(secondary);
+    }
+} */
+ 
+
+/* .rta {
+    /* color: color(text-primary);
+ } */
+
+
+/* .preg {
+    @extend .rta;
+    letter-spacing: 3px;
+} */
+ 

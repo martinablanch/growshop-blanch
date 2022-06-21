@@ -11,8 +11,8 @@ h1 {
 }
 
 h2 {
-    font-family: $text;
-    font-size: $text-size;
+    font-family: $subtitle;
+    font-size: $subtitle-size;
     color: $text-color;
 }
 
@@ -23,26 +23,44 @@ h3 {
 }
 
 main {
+
     .portada {
-        background-color: $bg-color;
+        background-image: url('../media/portadas-varios/bg.jpg');
+        background-size: cover;
         color: $text-color;
         text-align: center;
         border-top: 1px solid whitesmoke;
         width: auto;
         height: auto;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .principal {
         padding-top: 100px;
         padding-bottom: 100px;
+
+        h1 {
+            letter-spacing: 2px;
+        }
+
     }
 
     .bg-quienes {
         background-color: $second-bg-color;
 
+
         .quieneSomos {
-            font-family: roboto-regular;
-            font-size: 18px;
+            font-family: $text;
+            font-size: $text-size;
             color: $text-color;
             text-align: center;
             padding-bottom: 20px;
+        }
+
+        .h3-quienes {
+            font-family: $subtitle;
+            font-size: $subtitle-size;
         }
     }
 
@@ -57,6 +75,11 @@ main {
         flex-direction: column;
         align-items: center;
         margin: 0 auto
+    }
+
+    /* en NOVEDADES */
+    .bg-prod {
+        background-color: $bg-color;
     }
 
     .productos {
@@ -107,38 +130,23 @@ main {
     }
 }
 
+/* en GROWSHOP y SMOKESHOP */
+.gt {
+    font-size: xx-large;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 /* En AYUDA */
 
-@function color($color-help) {
-    @return map-get($colores, $color-help);
+.main-ayuda {
+    background-color: $second-bg-color;
+    color: $text-color;
 }
-
-
-.help-sass {
-    background-color: color(primary-light);
-
-    
-    @include desktop {
-        background-color: color(secondary);
-    }
-}
-
-
-.rta {
-    color: color(text-primary);
-}
-
-.preg {
-    @extend .rta;
-    letter-spacing: 3px;
-}
-
 
 .contactoAyuda {
     text-align: center;
-    font-family: roboto-regular;
-    font-size: 20px;
+    font-family: $text;
 
     a#a-ayuda {
         text-decoration: none;

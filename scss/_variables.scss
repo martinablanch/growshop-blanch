@@ -22,15 +22,18 @@ $text-color:white;
 $title: jersey;
 $title-size: 50px;
 
-$text: Yanone;
-$text-size: 25px;
+$subtitle: Yanone;
+$subtitle-size: 25px;
+
+$text: roboto-regular;
+$text-size: 16px;
 
 
 /* EN 'AYUDA' */
 /* MAPA DE COLORES */
-$colores:(primary:black, primary-light:lighten(black, 20%), secondary: lighten(black,40%), text-primary:white);
-
+/* $colores:(primary:black, primary-light:lighten(black, 20%), secondary: lighten(black,40%), text-primary:white);
+ */
 /* breakpoint */
-$desktop: 1020px; 
+/* $desktop: 1020px;  */
 
 
