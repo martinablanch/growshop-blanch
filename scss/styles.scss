@@ -1,7 +1,6 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
-@import 'mixins';
 
 /* SCSS FONTS */
 h1 {
@@ -9,6 +8,7 @@ h1 {
     font-size: $title-size;
     color: $text-color;
 }
+
 
 h2 {
     font-family: $subtitle;
@@ -20,6 +20,15 @@ h3 {
     font-family: $text;
     font-size: $text-size;
     color: $text-color;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+        color: #414562;
+    }
 }
 
 main {
@@ -138,7 +147,6 @@ main {
 }
 
 /* En AYUDA */
-
 .main-ayuda {
     background-color: $second-bg-color;
     color: $text-color;
@@ -147,13 +155,34 @@ main {
 .contactoAyuda {
     text-align: center;
     font-family: $text;
+}
 
-    a#a-ayuda {
-        text-decoration: none;
-        color: white;
+/* Para centrar los articles en Growshop y Smokeshop */
+@media screen and (max-width: 767px) {
+    article {
+        display: flex;
+        justify-content: center;
     }
+}
 
-    a#a-ayuda:hover {
-        color: #A5425F;
+@media screen and (min-width: 768px){
+    section{
+        padding-right: 0 !important;
+        margin-right: 0 !important;
     }
+}
+    
+@media screen and (min-width:1000px){
+    section{
+        padding-left:0 !important;
+    }
+}
+
+/* ESTA ES LA QUE NO ME SALE */
+@media screen and (max-width:999px){
+section article div{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
 }

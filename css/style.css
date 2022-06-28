@@ -13,12 +13,10 @@
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.ttf"); }
 
-/* EN 'AYUDA' */
-/* MAPA DE COLORES */
-/* $colores:(primary:black, primary-light:lighten(black, 20%), secondary: lighten(black,40%), text-primary:white);
- */
-/* breakpoint */
-/* $desktop: 1020px;  */
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../fonts/roboto-bold.ttf); }
+
 /* COLORS */
 /* FONTS */
 @font-face {
@@ -33,12 +31,10 @@
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.ttf"); }
 
-/* EN 'AYUDA' */
-/* MAPA DE COLORES */
-/* $colores:(primary:black, primary-light:lighten(black, 20%), secondary: lighten(black,40%), text-primary:white);
- */
-/* breakpoint */
-/* $desktop: 1020px;  */
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../fonts/roboto-bold.ttf); }
+
 /* SCSS HEADER */
 header {
   background-color: black;
@@ -49,24 +45,108 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 23vh;
-  /* MEDIA QUERIES MENÚ */ }
+  height: 23vh; }
   header .logoMenu {
     width: 120px;
     height: 120px;
     transition: all 0.5s; }
     header .logoMenu:hover {
       transform: scale(1.5); }
+  @media screen and (max-width: 450px) {
+    header .logoMenu {
+      width: 80px;
+      padding-top: 0.3em;
+      padding-left: 0; }
+    header .nav-search {
+      width: 10em; } }
   header .menuHeader {
     font-family: roboto-regular;
-    font-size: 16px; }
-  @media screen and (min-width: 768px) {
-    header .menuHeader {
-      display: inline; }
-      header .menuHeader a {
-        text-decoration: none; }
-        header .menuHeader a li {
-          list-style: none; } }
+    font-size: 16px;
+    padding-left: 10px;
+    text-decoration: none;
+    box-shadow: none;
+    list-style: none;
+    display: inline; }
+
+/* menú desplegable */
+#menu-abrir,
+#menu-cerrar {
+  padding: 6px; }
+
+#menu-check {
+  display: none; }
+
+header div.contenedor {
+  place-content: flex-start; }
+
+header div.contenedor nav {
+  width: 70%;
+  display: flex;
+  place-content: space-between; }
+
+/* media querie menú */
+@media screen and (min-width: 910px) {
+  /* en desktop */
+  #menu {
+    display: none; }
+  header div.contenedor,
+  header div.contenedor ul,
+  header div.contenedor ul il {
+    display: inline;
+    padding-right: 4px; }
+  header div.contenedor nav {
+    width: 100%;
+    display: inline; } }
+
+@media screen and (max-width: 909px) {
+  header div.contenedor {
+    display: flex;
+    place-content: space-between; }
+  nav ul li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white; }
+  /* si no está chequeado */
+  #menu-check:not(:checked) ~ nav {
+    display: none; }
+  /* si está chequeado */
+  #menu-check:checked ~ nav {
+    display: block; }
+  /* activación del botón */
+  #menu {
+    display: block;
+    color: white;
+    background-color: transparent;
+    font-size: 1.2em;
+    border: 2px solid white;
+    border-radius: 0.3em;
+    position: absolute;
+    right: 0.5em;
+    top: 2em;
+    transition: all 0.5s;
+    z-index: 9999; }
+  #menu-cerrar {
+    display: none; }
+  #menu-check:checked ~ label #menu-abrir {
+    display: none; }
+  #menu-check:checked ~ label #menu-cerrar {
+    display: block; }
+  /* estilo para el menú desplegable */
+  header div.contenedor nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-top: 0.5em;
+    padding-right: 3em;
+    background-color: black;
+    opacity: 0.95;
+    font-weight: lighter; }
+  header div.contenedor nav ul,
+  header div.contenedor nav ul li {
+    display: block;
+    text-align: right; } }
 
 /* COLORS */
 /* FONTS */
@@ -82,12 +162,10 @@ header {
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.ttf"); }
 
-/* EN 'AYUDA' */
-/* MAPA DE COLORES */
-/* $colores:(primary:black, primary-light:lighten(black, 20%), secondary: lighten(black,40%), text-primary:white);
- */
-/* breakpoint */
-/* $desktop: 1020px;  */
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../fonts/roboto-bold.ttf); }
+
 footer {
   background-color: black;
   font-family: roboto-regular;
@@ -107,26 +185,6 @@ footer {
     right: 50px;
     bottom: 10%; }
 
-/* COLORS */
-/* FONTS */
-@font-face {
-  font-family: "Yanone";
-  src: url("../fonts/yanone.ttf"); }
-
-@font-face {
-  font-family: "jersey";
-  src: url("../fonts/Jersey M54.ttf"); }
-
-@font-face {
-  font-family: "roboto-regular";
-  src: url("../fonts/roboto-regular.ttf"); }
-
-/* EN 'AYUDA' */
-/* MAPA DE COLORES */
-/* $colores:(primary:black, primary-light:lighten(black, 20%), secondary: lighten(black,40%), text-primary:white);
- */
-/* breakpoint */
-/* $desktop: 1020px;  */
 /* SCSS FONTS */
 h1 {
   font-family: jersey;
@@ -142,6 +200,12 @@ h3 {
   font-family: roboto-regular;
   font-size: 16px;
   color: white; }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:hover {
+    color: #414562; }
 
 main {
   /* en NOVEDADES */ }
@@ -231,8 +295,25 @@ main {
 .contactoAyuda {
   text-align: center;
   font-family: roboto-regular; }
-  .contactoAyuda a#a-ayuda {
-    text-decoration: none;
-    color: white; }
-  .contactoAyuda a#a-ayuda:hover {
-    color: #A5425F; }
+
+/* Para centrar los articles en Growshop y Smokeshop */
+@media screen and (max-width: 767px) {
+  article {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (min-width: 768px) {
+  section {
+    padding-right: 0 !important;
+    margin-right: 0 !important; } }
+
+@media screen and (min-width: 1000px) {
+  section {
+    padding-left: 0 !important; } }
+
+/* ESTA ES LA QUE NO ME SALE */
+@media screen and (max-width: 999px) {
+  section article div {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important; } }

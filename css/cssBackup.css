@@ -487,30 +487,6 @@ footer {
     }
 }
 
-/* GRID AYUDA */
-.grid-ayuda {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header"
-        "main"
-        "footer";
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
 
 /* TRANSICIONES Y ESTILOS */
 /* Transición a los botones */
@@ -563,60 +539,8 @@ a#a-ayuda:hover{
     color: #A5425F;
 }
 
-/* Transición al logo del header */
-.logoMenu{
-    transition: all 0.5s;
-}
-
-.logoMenu:hover{
-    transform: scale(1.5);
-}
-
-.gt{
-    font-size: xx-large;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.hover-img:hover{
-    background-color: #1A1B1D;
-    opacity: 0.3;
-}
-
-.main-ayuda{
-    background-color: #1A1B1D;
-    color: #ffffff;
-}
-
-.preg{
-    letter-spacing: 3px;
-}
 
 
 
-/* SASS II EN AYUDA */
-/* @function color($color-help) {
-    @return map-get($colores, $color-help);
-}
 
 
-.help-sass {
-    background-color: color(primary-light);
-
-
-    @include desktop {
-        background-color: color(secondary);
-    }
-} */
- 
-
-/* .rta {
-    /* color: color(text-primary);
- } */
-
-
-/* .preg {
-    @extend .rta;
-    letter-spacing: 3px;
-} */
- 

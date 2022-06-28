@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Un sitio para cultivadores">
-    <meta name="keywords" content="growshop, smokeshop, cultivadores, cultivo, plantas, cuidado de plantas, productos de growshop, productos de smokeshop">
+    <meta name="keywords"
+        content="growshop, smokeshop, cultivadores, cultivo, plantas, cuidado de plantas, productos de growshop, productos de smokeshop">
     <title>Inicio | Gorilla</title>
     <link rel="shortcut icon" href="./media/logos/gorillalogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,103 +16,93 @@
 </head>
 
 <body>
+    <header class="container-fluid">
 
-    <div class="grid-inicio">
+        <a href="#" class="logoMenu"><img src="./media/logos/gorillalogo.png" alt="INICIO" width="100px"></a>
 
-        <header class="header container-fluid">
+        <form action="#" class="nav-search" role="search" style="overflow:inherit; display: inherit;">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
 
-            <a href="#" class="logoMenu"><img src="./media/logos/gorillalogo.png" alt="INICIO" width="100px"></a>
+        <div class="contenedor">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
 
-            <form action="#" class="nav-search" role="search" style="overflow:inherit; display: inherit;">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-
-            <nav class="navbar navbar-expand-lg navbar-expand-xl navbar-expand-xxl navbar-dark">
-                <div class="container-fluid">
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="menu" class="collapse navbar-collapse">
-                        <ul class="menuHeader navbar-nav d-inline-flex p-2">
-                            <li class="menuHeader dropdown-item"><a class="nav-link" href="#">INICIO</a></li>
-                            <li class="menuHeader dropdown-item"><a class="nav-link"
-                                    href="./pages/growshop.html">GROWSHOP</a></li>
-                            <li class="menuHeader dropdown-item"><a class="nav-link"
-                                    href="./pages/smokeshop.html">SMOKESHOP</a></li>
-                            <li class="menuHeader dropdown-item"><a class="nav-link"
-                                    href="./pages/novedades.html">NOVEDADES</a></li>
-                            <li class="menuHeader dropdown-item"><a class="nav-link" href="#Contacto">CONTACTO</a></li>
-                            <li class="menuHeader dropdown-item"><a class="nav-link" href="./pages/ayuda.html">AYUDA</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <nav>
+                <ul class="menuHeader">
+                    <li class="menuHeader"><a href="#">INICIO</a></li>
+                    <li class="menuHeader"><a href="./pages/growshop.html">GROWSHOP</a></li>
+                    <li class="menuHeader"><a href="./pages/smokeshop.html">SMOKESHOP</a></li>
+                    <li class="menuHeader"><a href="./pages/novedades.html">NOVEDADES</a></li>
+                    <li class="menuHeader"><a href="#Contacto">CONTACTO</a></li>
+                    <li class="menuHeader"><a href="./pages/ayuda.html">AYUDA</a></li>
+                </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
+    <main>
+        <div class="principal portada">
+            <div><img src="./media/logos/gorillalogo.png" alt="Gorilla" width="300px"></div>
+            <h1>GORILLA</h1>
+            <h2 class="subtitle">FOR GROWERS</h2>
+        </div>
 
-        <main>
-            <div class="principal portada">
-                <div><img src="./media/logos/gorillalogo.png" alt="Gorilla" width="300px"></div>
-                <h1>GORILLA</h1>
-                <h2 class="subtitle">FOR GROWERS</h2>
+        <div class="bg-quienes">
+            <div class="quieneSomos texto container py-5">
+                <h3 class="h3-quienes">¿Quiénes somos?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque
+                    nulla eius sapiente
+                    doloribus reiciendis quam deleniti magnam ad fuga aliquid repellat blanditiis sit fugiat
+                    quibusdam
+                    quos, ipsam at totam maiores quo cupiditate dolorum nemo dolore reprehenderit! Sed architecto
+                    natus
+                    fugiat, labore alias est odit neque sequi laboriosam dolore deserunt.
+                </p>
             </div>
+        </div>
 
-            <div class="bg-quienes">
-                <div class="quieneSomos texto container py-5">
-                    <h3 class="h3-quienes">¿Quiénes somos?</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque
-                        nulla eius sapiente
-                        doloribus reiciendis quam deleniti magnam ad fuga aliquid repellat blanditiis sit fugiat
-                        quibusdam
-                        quos, ipsam at totam maiores quo cupiditate dolorum nemo dolore reprehenderit! Sed architecto
-                        natus
-                        fugiat, labore alias est odit neque sequi laboriosam dolore deserunt.
-                    </p>
-                </div>
-            </div>
-
-            <div class="sectionProductos row-1 container-fluid w-100 mx-0">
-                <div class="row mx-0">
-                    <div class="productos col-md-6 mx-0 px-0 py-1">
-                        <img src="./media/portadas-varios/portada-grow.jpg" class="w-100 h-100 hover-img"
-                            alt="GROWSHOP">
-                        <div class="position">
-                            <p>GROWSHOP</p>
-                            <div class="transition"><a href="./pages/growshop.html"><input type="submit" value="SHOP NOW" id="boton"></a></div>
-                        </div>
-                    </div>
-                    <div class="productos col-md-6 mx-0 px-0">
-                        <img src="./media/portadas-varios/portada-smoke.jpg" class="w-100 h-100 hover-img"
-                            alt="SMOKESHOP">
-                        <div class="position">
-                            <p>SMOKESHOP</p>
-                            <div class="transition"><a href="./pages/smokeshop.html"><input type="submit" value="SHOP NOW" id="boton"></a></div>
-                        </div>
+        <div class="sectionProductos row-1 container-fluid w-100 mx-0">
+            <div class="row mx-0">
+                <div class="productos col-md-6 mx-0 px-0 py-1">
+                    <img src="./media/portadas-varios/portada-grow.jpg" class="w-100 h-100 hover-img" alt="GROWSHOP">
+                    <div class="position">
+                        <p>GROWSHOP</p>
+                        <div class="transition"><a href="./pages/growshop.html"><input type="submit" value="SHOP NOW"
+                                    id="boton"></a></div>
                     </div>
                 </div>
-            </div>
-
-        </main>
-
-        <footer id="Contacto" class="footer container-fluid">
-            <div class="row align-items-center">
-                <div class="col-6">
-                    <a href="https://www.instagram.com/"><img src="./media/logos/igicon.png"
-                            alt="Instagram" width="30px"></a>
-                    <a href="https://www.facebook.com/"><img src="./media/logos/fbicon.png"
-                            alt="Facebook" width="30px"></a>
-                </div>
-                <div class="horarios col-6">
-                    <p class="text-nowrap">Horarios</p>
-                    <p class="text-nowrap">Lunes a Sábados</p>
-                    <p class="text-nowrap">10:00hs a 19:00hs</p>
+                <div class="productos col-md-6 mx-0 px-0">
+                    <img src="./media/portadas-varios/portada-smoke.jpg" class="w-100 h-100 hover-img" alt="SMOKESHOP">
+                    <div class="position">
+                        <p>SMOKESHOP</p>
+                        <div class="transition"><a href="./pages/smokeshop.html"><input type="submit" value="SHOP NOW"
+                                    id="boton"></a></div>
+                    </div>
                 </div>
             </div>
-            <a class="wsp" href="https://www.whatsapp.com/?lang=es"><img src="./media/logos/wsp.png" alt=""></a>
-        </footer>
+        </div>
 
-    </div>
+    </main>
+
+    <footer id="Contacto" class="footer container-fluid">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <a href="https://www.instagram.com/"><img src="./media/logos/igicon.png" alt="Instagram"
+                        width="30px"></a>
+                <a href="https://www.facebook.com/"><img src="./media/logos/fbicon.png" alt="Facebook" width="30px"></a>
+            </div>
+            <div class="horarios col-6">
+                <p class="text-nowrap">Horarios</p>
+                <p class="text-nowrap">Lunes a Sábados</p>
+                <p class="text-nowrap">10:00hs a 19:00hs</p>
+            </div>
+        </div>
+        <a class="wsp" href="https://www.whatsapp.com/?lang=es"><img src="./media/logos/wsp.png" alt=""></a>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
