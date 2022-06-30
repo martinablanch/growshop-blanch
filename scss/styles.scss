@@ -55,7 +55,7 @@ main {
 
     }
 
-    .bg-quienes {
+    .bg-second {
         background-color: $second-bg-color;
 
 
@@ -89,6 +89,12 @@ main {
     /* en NOVEDADES */
     .bg-prod {
         background-color: $bg-color;
+    }
+
+    .text-news {
+        margin-bottom: 0;
+        padding: 60px 10px;
+        font-size: x-large;
     }
 
     .productos {
@@ -141,9 +147,10 @@ main {
 
 /* en GROWSHOP y SMOKESHOP */
 .gt {
-    font-size: xx-large;
+    font-size: 3em;
     padding-top: 15px;
     padding-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 /* En AYUDA */
@@ -165,24 +172,22 @@ main {
     }
 }
 
-@media screen and (min-width: 768px){
-    section{
+@media screen and (min-width: 768px) {
+    section {
         padding-right: 0 !important;
         margin-right: 0 !important;
     }
 }
-    
-@media screen and (min-width:1000px){
-    section{
-        padding-left:0 !important;
+
+@media screen and (min-width:1000px) {
+    section {
+        padding-left: 0 !important;
     }
 }
 
 /* ESTA ES LA QUE NO ME SALE */
-@media screen and (max-width:999px){
-section article div{
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-}
+@media screen and (min-width:830px) {
+    section {
+        padding-left: 3.5rem !important;
+    }
 }

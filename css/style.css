@@ -224,15 +224,15 @@ main {
     padding-bottom: 100px; }
     main .principal h1 {
       letter-spacing: 2px; }
-  main .bg-quienes {
+  main .bg-second {
     background-color: #1A1B1D; }
-    main .bg-quienes .quieneSomos {
+    main .bg-second .quieneSomos {
       font-family: roboto-regular;
       font-size: 16px;
       color: white;
       text-align: center;
       padding-bottom: 20px; }
-    main .bg-quienes .h3-quienes {
+    main .bg-second .h3-quienes {
       font-family: Yanone;
       font-size: 25px; }
   main .sectionProductos {
@@ -248,6 +248,10 @@ main {
     margin: 0 auto; }
   main .bg-prod {
     background-color: black; }
+  main .text-news {
+    margin-bottom: 0;
+    padding: 60px 10px;
+    font-size: x-large; }
   main .productos {
     text-align: center;
     position: relative;
@@ -283,9 +287,10 @@ main {
 
 /* en GROWSHOP y SMOKESHOP */
 .gt {
-  font-size: xx-large;
+  font-size: 3em;
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  letter-spacing: 1px; }
 
 /* En AYUDA */
 .main-ayuda {
@@ -312,8 +317,6 @@ main {
     padding-left: 0 !important; } }
 
 /* ESTA ES LA QUE NO ME SALE */
-@media screen and (max-width: 999px) {
-  section article div {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important; } }
+@media screen and (min-width: 830px) {
+  section {
+    padding-left: 3.5rem !important; } }
